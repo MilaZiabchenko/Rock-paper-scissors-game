@@ -1,8 +1,8 @@
 $font-stack-one: 'Fresca', sans-serif;
 $font-stack-two: 'Hind', sans-serif;
 
-$light-color: #fff;
-$dark-color: #444;
+$light-color: hsl(0, 0%, 100%);
+$dark-color: hsl(0, 0%, 24%);
 $primary-color: hsl(205, 100%, 50%);
 $secondary-color: hsl(155, 90%, 50%);
 $lose-color: hsl(355, 100%, 50%);
@@ -50,7 +50,7 @@ $font-sizes: (
   }
 }
 
-%p {
+%text-style {
   max-width: 65ch;
   line-height: 1.5;
   margin: 2rem 1rem;
@@ -60,5 +60,5 @@ $font-sizes: (
 .heading,
 .choice,
 .reset {
-  @extend %p;
+  @extend %text-style;
 }

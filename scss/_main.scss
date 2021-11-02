@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $light-color;
+  border-radius: 100vw;
+  margin-block: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary-color;
+  border: 0.2rem solid $light-color;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(155, 100%, 50%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +28,7 @@ body {
   font-family: $font-stack-two;
   background: $background-image;
   height: 100vh;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .flex {
@@ -24,8 +44,8 @@ body {
 .score {
   display: flex;
   justify-content: space-between;
-  width: 70%;
-  margin: 1rem auto;
+  width: 35%;
+  margin: 2rem auto;
 
   p:first-child {
     color: $light-color;
@@ -63,9 +83,10 @@ button:hover {
 
 .reset {
   @include button-style($dark-color, $secondary-color);
+  @include button-style($dark-color, hsl(155, 100%, 50%));
   display: none;
 }
 
 .reset:hover {
-  background: hsl(155, 100%, 50%);
+  background: $secondary-color;
 }
