@@ -6,6 +6,7 @@ import {
   modal,
   scoreBoard,
 } from './constants.js';
+import './../scss/style.scss';
 
 const play = e => {
   const playerChoice = e.target.id;
