@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game">
+    <meta name="keywords" content="game, rock, paper, scissors">
+    <meta name="author" content="Mila Ziabchenko">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Hind:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="/js.00a46daa.js" type="module"></script>
+    <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="/js.00a46daa.css"></head>
+  <body class="flex">
+    <div class="flex">
+      <p class="rules">Rock beats scissors</p>
+      <p class="rules">Paper beats rock</p>
+      <p class="rules">Scissors beats paper</p>
+      <br>
+      <p class="rules">And we play up to 3 wins...</p>
+      <h1 class="heading">Let's play!</h1>
+    </div>
+    <button type="reset" id="reset" class="reset">Reset</button>
+    <div id="score" class="score">
+      <p>Computer: 0</p>
+      <p>You: 0</p>
+    </div>
+    <div class="game-items">
+      <div class="flex">
+        <img src="/rock.995f80aa.svg" alt="Rock">
+        <button type="button" id="rock" class="choice">Rock</button>
+      </div>
+      <div class="flex">
+        <img src="/paper.b1b7012f.svg" alt="Paper">
+        <button type="button" id="paper" class="choice">Paper</button>
+      </div>
+      <div class="scissors-game-item flex">
+        <img src="/scissors.01e1469b.svg" alt="Scissors">
+        <button type="button" id="scissors" class="choice">Scissors</button>
+      </div>
+    </div>
+    <div class="modal">
+      <div id="result" class="modal-content flex"></div>
+    </div>
+  </body>
+</html>
